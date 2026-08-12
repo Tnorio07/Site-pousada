@@ -197,6 +197,12 @@ footer a {
     font-weight: 600;
 }
 
+.sobre-invertida {
+    flex-direction: row-reverse;
+    margin-top: 0;
+    padding: 10vh 20vh;
+}
+
 .imagi {
     flex: 1;
 }
@@ -225,4 +231,58 @@ footer a {
     color: white;
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 10px;
+    margin-bottom: 80px;
+}
+
+.card-container {
+    position: relative;
+}
+
+.card-container h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #5d5d5d;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 100;
+    letter-spacing: 2px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.card {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-container {
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.card-container:hover {
+    transform: scale(1.05);
+}
+
+.cardtext {
+    text-decoration: none;
+    color: rgb(255, 150, 21);
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
 }
