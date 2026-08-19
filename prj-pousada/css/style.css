@@ -1,35 +1,67 @@
 body {
     font-family: 'Montserrat', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 0%;
+    margin: 0;
     line-height: 1.6;
+    background-color: #fafcff;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    box-sizing: border-box;
+    background-color: #00203ab5;
+    backdrop-filter: blur(6px);
+    z-index: 10000;
 }
 
 nav ul {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    align-items: center;
     gap: 10vh;
-    padding: 1vh;
-    width: 100%;
-    height: auto;
+    margin: 0;
+    padding: 0;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 nav ul li {
-    text-decoration: none;
     list-style: none;
 }
 
-a {
+nav a {
+    color: #ffffff;
     text-decoration: none;
-    color: black;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: rgb(127, 184, 233);
+}
+
+nav img {
+    max-height: 10vh;
+    width: auto;
 }
 
 .paradise img {
     width: 100%;
     height: 100vh;
-    filter: brightness(70%);
+    filter: brightness(55%);
 }
 
 .paradise {
@@ -57,30 +89,6 @@ a {
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
     margin-top: 0px;
-}
-
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: linear-gradient(180deg,
-            rgba(14, 165, 233, 0),
-            rgba(125, 211, 252, 0),
-            rgba(224, 242, 254, 0));
-
-    backdrop-filter: blur(2px);
-    
-    z-index: 10000000;
-}
-
-nav a {
-    color: #c3e4ff;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: rgb(127, 184, 233);
 }
 
 footer {
@@ -212,14 +220,26 @@ footer a {
     height: 450px;
     object-fit: cover;
     border-radius: 8px;
+    filter: brightness(80%);
+    box-shadow: 0 10px 30px rgba(26, 58, 68, 0.3);
 }
 
 .botao {
     background-color: #2877cb;
-    max-width: 30vh;
-    height: 5vh;
+    max-width: 300px;
+    height: 50px;
     margin-top: 1vh;
     border-radius: 5px;
+    transition: transform 0.25s ease, color 0.25s ease;
+    text-decoration: none;
+    list-style: none;
+}
+
+.botao:hover {
+    transform: scale(1.01);
+    background-color: #5aaaff;
+    transition: 0.3s;
+
 }
 
 .botao-secundario {
@@ -233,56 +253,74 @@ footer a {
     font-family: 'Montserrat', sans-serif;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    margin-top: 10px;
-    margin-bottom: 80px;
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    max-width: 1240px;
+    margin: auto;
 }
 
 .card-container {
     position: relative;
-}
-
-.card-container h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #5d5d5d;
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    z-index: 100;
-    letter-spacing: 2px;
-    font-size: 36px;
-    font-weight: 700;
+    height: 390px;
+    overflow: hidden;
+    color: white;
+    border-radius: 2px;
+    box-shadow: 0 10px 30px rgba(26, 58, 68, .1);
 }
 
 .card {
-    width: 350px;
-    height: 250px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    border-radius: 10px;
+    transition: transform .6s ease;
 }
 
-.card-container {
-    position: relative;
-    transition: transform 0.3s ease;
+.card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(transparent 25%, rgba(7, 30, 41, .85));
 }
 
-.card-container:hover {
-    transform: scale(1.05);
+.card-content {
+    position: absolute;
+    left: 25px;
+    right: 22px;
+    bottom: 22px;
 }
 
-.cardtext {
-    text-decoration: none;
-    color: rgb(255, 150, 21);
-    font-family: 'Playfair Display', serif;
-    font-size: 22px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-
+.card-content h3 {
+    margin: 4px 0 0;
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
 }
+
+.card-container:hover .card {
+    transform: scale(1.07);
+}
+
+.destaques {
+    padding: 110px 5% 130px;
+    background: #eef5f4;
+}
+
+.section-heading {
+    max-width: 1240px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    margin: 0 0 8px;
+    color: #263746;
+    font-family: "Playfair Display", serif;
+    font-size: clamp(38px, 5vw, 54px);
+}
+
+.section-heading>p:last-child {
+    margin: 0 auto;
+    color: #718088;
+    font-size: 14px;
+}
+
