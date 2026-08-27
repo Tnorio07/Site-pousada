@@ -1,0 +1,71 @@
+.textoaco h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 50px;
+    font-weight: 10px;
+    margin: 4px 0 0;
+    font-weight: 450;
+    letter-spacing: 2px;
+
+
+}
+
+.textoaco p {
+    display: flex;
+    justify-content: center;
+    padding-right: 20vh;
+    letter-spacing: 1px;
+    padding-left: 20vh;
+    font-style: center;
+    text-align: center;
+    color: #ffff;
+}
+
+.textoaco {
+    margin-top: 7vh;
+    padding: 80px 10% 80px;
+    background: #1567B0;
+    margin-bottom: 7vh;
+}
+
+.abu h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 50px;
+    font-weight: 10px;
+    margin: 4px 0 0;
+    font-weight: 450;
+    letter-spacing: 2px;
+}
+
+.abu h3 {
+    display: flex;
+    justify-content: center;
+    padding-right: 20vh;
+    letter-spacing: 1px;
+    padding-left: 20vh;
+    font-style: center;
+    text-align: center;
+    margin-top: 0;
+    font-weight: 400;
+    align-items: center;
+    gap: 3vh;
+    color: #2877cb;
+    font-size: 25px;
+
+}
+
+.abu h3::before,
+.abu h3::after {
+  content: "";
+  width: 105px;
+  height: 2px;
+  background-color: #2877cb;
+  
+}
