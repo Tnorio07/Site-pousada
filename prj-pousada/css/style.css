@@ -14,20 +14,16 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-
   width: 100%;
   height: 90px;
-
   display: flex;
   align-items: center;
-
   padding: 0 5%;
   box-sizing: border-box;
-
   background-color: #00203ab5;
   backdrop-filter: blur(6px);
-
   z-index: 10000;
+  user-select: none;
 }
 
 .logonav {
@@ -44,12 +40,10 @@ nav img {
 nav ul {
   position: absolute;
   right: 5%;
-
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 40px;
-
   margin: 0;
   padding: 0;
 }
@@ -76,6 +70,7 @@ nav a:hover {
 
 .paradise {
   position: relative;
+  user-select: none;
 }
 
 .titulo {
