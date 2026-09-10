@@ -1,0 +1,160 @@
+.textoaco h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 50px;
+    margin: 4px 0 0;
+    font-weight: 450;
+    letter-spacing: 2px;
+
+
+}
+
+.textoaco p {
+    display: flex;
+    justify-content: center;
+    padding-right: 20vh;
+    letter-spacing: 1px;
+    padding-left: 20vh;
+    text-align: center;
+    color: #ffff;
+}
+
+.textoaco {
+    margin-top: 7vh;
+    padding: 80px 10% 80px;
+    background: #1567B0;
+    margin-bottom: 7vh;
+}
+
+.abu h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 50px;
+    margin: 4px 0 0;
+    font-weight: 450;
+    letter-spacing: 2px;
+}
+
+.abu h3 {
+    display: flex;
+    justify-content: center;
+    padding-right: 20vh;
+    letter-spacing: 1px;
+    padding-left: 20vh;
+    font-style: center;
+    text-align: center;
+    margin-top: 0;
+    font-weight: 400;
+    align-items: center;
+    gap: 3vh;
+    color: #2877cb;
+    font-size: 25px;
+
+}
+
+.abu h3::before,
+.abu h3::after {
+    content: "";
+    width: 105px;
+    height: 2px;
+    background-color: #2877cb;
+
+}
+
+.abu p {
+    display: flex;
+    justify-content: center;
+    padding-right: 20vh;
+    letter-spacing: 1px;
+    padding-left: 20vh;
+    text-align: center;
+}
+
+.abu {
+    margin-top: 4vh;
+}
+
+.cartao {
+    width: 500px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    min-height: 650px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cartao h1 {
+    margin: 18px 15px 12px;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #122b4b;
+    text-align: center;
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.cartao p {
+    margin: 0 0 20px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 5px;
+    margin-left: 5px;
+    
+}
+
+.cataun {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.cartao img {
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+
+}
+
+.cataun button {
+    margin-top: auto;
+    padding: 11px 18px;
+    background-color: #000000;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition:
+        transform 0.25s ease,
+        color 0.25s ease;
+}
+
+.cataun button:hover {
+    transform: scale(1.01);
+    background-color: #363636;
+    transition: 0.3s;
+}
+
+.yepi {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 10vh;
+}
