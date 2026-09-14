@@ -4,12 +4,10 @@
     align-items: center;
     color: #fff;
     font-family: "Cormorant Garamond", serif;
-    font-size: 50px;
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
     margin: 4px 0 0;
     font-weight: 450;
     letter-spacing: 2px;
-
-
 }
 
 .textoaco p {
@@ -20,13 +18,15 @@
     padding-left: 20vh;
     text-align: center;
     color: #ffff;
+    line-height: 1.8;
 }
 
 .textoaco {
     margin-top: 7vh;
     padding: 80px 10% 80px;
-    background: #1567B0;
+    background: linear-gradient(135deg, #1567b0 0%, #0d4d8b 100%);
     margin-bottom: 7vh;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 .abu h2 {
@@ -35,7 +35,7 @@
     align-items: center;
     color: #000000;
     font-family: "Cormorant Garamond", serif;
-    font-size: 50px;
+    font-size: clamp(2.3rem, 4vw, 3.2rem);
     margin: 4px 0 0;
     font-weight: 450;
     letter-spacing: 2px;
@@ -47,7 +47,6 @@
     padding-right: 20vh;
     letter-spacing: 1px;
     padding-left: 20vh;
-    font-style: center;
     text-align: center;
     margin-top: 0;
     font-weight: 400;
@@ -55,7 +54,6 @@
     gap: 3vh;
     color: #2877cb;
     font-size: 25px;
-
 }
 
 .abu h3::before,
@@ -64,7 +62,6 @@
     width: 105px;
     height: 2px;
     background-color: #2877cb;
-
 }
 
 .abu p {
@@ -74,6 +71,8 @@
     letter-spacing: 1px;
     padding-left: 20vh;
     text-align: center;
+    line-height: 1.8;
+    color: #37526d;
 }
 
 .abu {
@@ -83,11 +82,18 @@
 .cartao {
     width: 500px;
     background: #fff;
-    border-radius: 16px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    border-radius: 18px;
+    box-shadow: 0 18px 40px rgba(15, 42, 75, 0.12);
     min-height: 650px;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cartao:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 22px 45px rgba(15, 42, 75, 0.16);
 }
 
 .cartao h1 {
@@ -104,7 +110,7 @@
 .cartao p {
     margin: 0 0 20px;
     font-size: 15px;
-    line-height: 1.5;
+    line-height: 1.7;
     color: #666;
     display: flex;
     justify-content: center;
@@ -112,7 +118,6 @@
     text-align: center;
     margin-right: 5px;
     margin-left: 5px;
-    
 }
 
 .cataun {
@@ -120,34 +125,35 @@
     flex-direction: column;
     align-items: center;
     flex: 1;
+    padding: 0 18px 18px;
 }
 
 .cartao img {
     width: 100%;
-    border-radius: 16px 16px 0 0;
-
+    height: 260px;
+    object-fit: cover;
+    border-radius: 18px 18px 0 0;
 }
 
 .cataun button {
     margin-top: auto;
-    padding: 11px 18px;
-    background-color: #000000;
-    border-radius: 5px;
+    padding: 12px 22px;
+    background: linear-gradient(135deg, #1b1b1b 0%, #303030 100%);
+    border-radius: 10px;
     color: white;
     font-size: 15px;
     font-weight: bold;
     border: none;
     cursor: pointer;
     margin-bottom: 10px;
-    transition:
-        transform 0.25s ease,
-        color 0.25s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+    box-shadow: 0 12px 22px rgba(0, 0, 0, 0.12);
 }
 
 .cataun button:hover {
-    transform: scale(1.01);
-    background-color: #363636;
-    transition: 0.3s;
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, #363636 0%, #222 100%);
+    box-shadow: 0 18px 28px rgba(0, 0, 0, 0.2);
 }
 
 .yepi {
