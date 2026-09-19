@@ -4,7 +4,7 @@
     align-items: center;
     color: #fff;
     font-family: "Cormorant Garamond", serif;
-    font-size: clamp(2.2rem, 5vw, 3.4rem);
+    font-size: clamp(1.8rem, 4vw, 3.2rem);
     margin: 4px 0 0;
     font-weight: 450;
     letter-spacing: 2px;
@@ -13,12 +13,15 @@
 .textoaco p {
     display: flex;
     justify-content: center;
-    padding-right: 20vh;
+    padding-right: clamp(10px, 5vw, 50px);
     letter-spacing: 1px;
-    padding-left: 20vh;
+    padding-left: clamp(10px, 5vw, 50px);
     text-align: center;
-    color: #ffff;
-    line-height: 1.8;
+    margin-top: 0;
+    font-weight: 350;
+    align-items: center;
+    color: #ffffff;
+    font-size: clamp(1.1rem, 1.2vw, 2.4rem);
 }
 
 .textoaco {
@@ -35,7 +38,7 @@
     align-items: center;
     color: #000000;
     font-family: "Cormorant Garamond", serif;
-    font-size: clamp(2.3rem, 4vw, 3.2rem);
+    font-size: clamp(1.8rem, 4vw, 3.2rem);
     margin: 4px 0 0;
     font-weight: 450;
     letter-spacing: 2px;
@@ -53,26 +56,27 @@
     align-items: center;
     gap: 3vh;
     color: #2877cb;
-    font-size: 25px;
+    font-size: clamp(1.1rem, 1.2vw, 2.4rem);
 }
 
 .abu h3::before,
 .abu h3::after {
     content: "";
-    width: 105px;
-    height: 2px;
+    min-width: 105px;
+    min-height: 2px;
     background-color: #2877cb;
 }
 
 .abu p {
     display: flex;
     justify-content: center;
-    padding-right: 20vh;
+     padding-right: clamp(10px, 5vw, 50px);
     letter-spacing: 1px;
-    padding-left: 20vh;
+     padding-left: clamp(10px, 5vw, 50px);
     text-align: center;
     line-height: 1.8;
     color: #37526d;
+    font-size: clamp(0.5rem, 1, 2rem);
 }
 
 .abu {
@@ -80,7 +84,10 @@
 }
 
 .cartao {
-    width: 500px;
+    width: 50vh;
+    min-width: 30vh;
+    height: 30vh;
+    min-height: 20vh;
     background: #fff;
     border-radius: 18px;
     box-shadow: 0 18px 40px rgba(15, 42, 75, 0.12);
