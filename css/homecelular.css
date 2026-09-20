@@ -1,0 +1,128 @@
+
+@media (max-width: 768px) {
+  .nav-bar {
+    padding: 1rem 1.5rem;
+  }
+
+  .paradise img {
+    height: 70vh;
+  }
+
+  .titulo {
+    width: 90%;
+  }
+
+  .titulo h1 {
+    font-size: 38px;
+    letter-spacing: 0.04em;
+  }
+
+  .titulo p {
+    font-size: 16px;
+  }
+
+  .sobre,
+  .sobre-invertida {
+    flex-direction: column;
+    text-align: center;
+    padding: 8vh 6vw;
+    margin-top: 0;
+    gap: 30px;
+  }
+
+  .sobre-texto {
+    align-items: center;
+  }
+
+  .sobre p {
+    padding-right: 0;
+  }
+
+  .botao {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .feitovoce {
+    font-size: 1.8rem;
+  }
+
+  .imagi img {
+    height: 280px;
+    margin-bottom: 0;
+  }
+
+  .destaques {
+    padding: 60px 6% 70px;
+    margin-top: 0;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .card-container {
+    height: 260px;
+  }
+
+  .card-content h3 {
+    font-size: 22px;
+  }
+
+  footer {
+    padding: 40px 20px 15px;
+  }
+
+  .footerdivisao {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 35px;
+  }
+
+  footer img {
+    width: 22vh;
+  }
+
+  .menu ul {
+    align-items: center;
+  }
+
+  .contato,
+  .social {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo h1 {
+    font-size: 30px;
+  }
+
+  .titulo p {
+    font-size: 14px;
+  }
+
+  .feitovoce {
+    font-size: 1.5rem;
+  }
+
+  .sobre p {
+    font-size: 14px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card-container {
+    height: 220px;
+  }
+
+  .direitos {
+    font-size: 11px;
+    text-align: center;
+    padding: 0 10px;
+  }
+}

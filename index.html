@@ -7,7 +7,6 @@
   <title>Pousada Paradise</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/homecelular.css" />
-  <link rel="stylesheet" href="css/responsivo-home-acomodacoes.css" />
   <link rel="stylesheet" href="css/acomodacoes.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,32 +18,34 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="javascript/script.js" defer></script>
 </head>
 
 <body>
   <header>
-    <nav>
-      <div class="logonav">
+
+    <nav class="nav-bar">
+      <div class="logo">
         <img src="images/e9f90695-33bc-48f4-be9c-e958931aeed6.png" alt="" />
       </div>
 
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="acomodacoes.html">Nossas Acomodações</a></li>
-        <li><a href="atracoes.html">Atrações Principais</a></li>
-        <li><a href="faleconosco.html">Fale Conosco</a></li>
-      </ul>
+      <div class="nav-itens">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="acomodacoes.html">Acomodações</a></li>
+          <li><a href="atracoes.html">Atrações</a></li>
+          <li><a href="faleconosco.html">Suporte</a></li>
+        </ul>
+      </div>
 
-      <div class="btaReserva">
+      <div class="botao">
         <a href="faleconosco.html">Reservar</a>
       </div>
 
-      <div class="hamburguer-icon">
+      <div class="hamburguer-icon" onclick="menuShow()">
         <span class="material-symbols-outlined">menu</span>
       </div>
     </nav>
-
-
 
     <div class="hamburguer-menu">
       <ul>
@@ -54,12 +55,8 @@
         <li><a href="faleconosco.html">Fale Conosco</a></li>
       </ul>
 
-      <div class="btaReserva">
+      <div class="botao">
         <a href="faleconosco.html">Reservar</a>
-      </div>
-
-      <div class="hamburguer-icon">
-        <span class="material-symbols-outlined">menu</span>
       </div>
     </div>
   </header>

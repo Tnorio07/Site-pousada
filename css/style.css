@@ -9,6 +9,11 @@ body {
   line-height: 1.6;
   background: linear-gradient(180deg, #f8fbff 0%, #edf5f7 100%);
   color: #19314d;
+
+}
+
+li {
+  list-style: none;
 }
 
 a {
@@ -34,63 +39,59 @@ header {
   backdrop-filter: blur(10px);
 }
 
-nav {
+.nav-bar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  min-height: 84px;
-  width: 94%;
-  max-width: 1220px;
-  margin-inline: auto;
-  color: white;
+  padding: 1rem clamp(1.5rem, 5vw, 6rem);
 }
 
-.btaReserva {
-  padding: 10px 15px;
+.botao {
+  padding: 6px 13px;
   background: linear-gradient(135deg, #2877cb 0%, #1f5ea4 100%);
   border-radius: 12px;
   align-items: center;
   display: flex;
   justify-content: center;
   border-radius: 10px;
+  color: white;
 }
 
-.btaReserva:hover {
+.botao a {
   color: white;
+}
+
+.botao :hover {
   transform: translateY(-2px);
-  background: linear-gradient(135deg, #3486dd 0%, #2d74c5 100%);
   transition: 0.5s;
 }
 
-.logonav {
-  display: flex;
-  align-items: center;
-}
-
-nav img {
+.logo img {
   display: block;
   max-height: 70px;
   width: auto;
 }
 
-nav ul {
+.nav-itens ul {
   display: flex;
   gap: clamp(20px, 3vw, 40px);
   margin: 0;
   padding: 0;
 }
 
-nav li {
-  list-style: none;
+.nav-itens {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-nav a {
+.nav-itens a {
   color: #fff;
   text-decoration: none;
   transition: color 0.3s ease;
+  font-size: clamp(1em, 1vw, 3rem);
 }
 
-nav a:hover {
+.nav-itens a:hover {
   color: rgb(127, 184, 233);
 }
 
@@ -406,5 +407,49 @@ footer a {
 }
 
 @media (max-width: 768px) {
+
+  .nav-itens {
+    display: none;
     
+  }
+
+  .botao {
+    display: none;
+  }
+
+  .hamburguer-icon {
+    display: block;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hamburguer-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .hamburguer-menu li {
+    display: block;
+    padding-top: 1.2rem;
+    
+  }
+
+  .hamburguer-menu botao {
+    display: block;
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+
+  .open {
+    display: block;
+  }
+
+  .hamburguer-menu ul li a {
+  color: white;
+}
 }
