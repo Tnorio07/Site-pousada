@@ -331,21 +331,25 @@ header {
 
 footer {
   margin-top: 0;
-  padding: 60px 30px 15px;
+  padding: clamp(40px, 6vw, 60px) clamp(20px, 4vw, 30px) 15px;
   color: #e2eafc;
-  background: linear-gradient(160deg,
-      #03192e 0%,
-      #0f2b48 45%,
-      #1b3a5c 100%);
+  background: linear-gradient(160deg, #03192e 0%, #0f2b48 45%, #1b3a5c 100%);
 }
 
 footer img {
-  width: 30vh;
+  width: clamp(140px, 20vw, 300px);
+  max-width: 100%;
   height: auto;
 }
 
 footer a {
   color: #abc4ff;
+  text-decoration: none;
+  font-size: clamp(14px, 1.2vw, 17px);
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 .footerdivisao {
