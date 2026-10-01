@@ -6,6 +6,7 @@
     <title>Pousada Paradise</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/homecelular.css" />
+    <link rel="stylesheet" href="css/contato.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -69,6 +70,163 @@
     <div class="titulo">
       <h1>FALE CONOSCO</h1>
     </div>
+
+    <section class="contato-banner">
+      <img
+        src="images/0f2d1c_cc20757c019a466ea8dd5fbd6b8db2e0~mv2.avif"
+        alt="Praia paradisíaca"
+      />
+
+      <div class="contato-banner-texto">
+        <h1>Faça sua reserva</h1>
+        <p>Preencha o formulário abaixo e garanta sua estadia no paraíso.</p>
+      </div>
+    </section>
+
+    <main class="reserva">
+      <div class="formulario">
+        <div class="formulario-titulo">
+          <i class="ph ph-palm-tree"></i>
+          <div>
+            <h2>Solicite sua reserva</h2>
+            <p>Preencha os dados abaixo e nos conte o que você precisa.</p>
+          </div>
+        </div>
+
+        <form>
+          <div class="form-linha">
+            <div class="campo">
+              <label for="nome">Nome completo</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Digite seu nome completo"
+                required
+              />
+            </div>
+
+            <div class="campo">
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Digite seu e-mail"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-linha">
+            <div class="campo">
+              <label for="telefone">Telefone</label>
+              <input
+                type="tel"
+                id="telefone"
+                name="telefone"
+                placeholder="(XX) XXXXX-XXXX"
+                required
+              />
+            </div>
+
+            <div class="campo">
+              <label for="hospedes">Número de hóspedes</label>
+              <select id="hospedes" name="hospedes" required>
+                <option value="">Selecione</option>
+                <option value="1">1 hóspede</option>
+                <option value="2">2 hóspedes</option>
+                <option value="3">3 hóspedes</option>
+                <option value="4">4 hóspedes</option>
+                <option value="5">5 hóspedes</option>
+                <option value="6">6 ou mais hóspedes</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-linha">
+            <div class="campo">
+              <label for="entrada">Data de entrada</label>
+              <input type="date" id="entrada" name="entrada" required />
+            </div>
+
+            <div class="campo">
+              <label for="saida">Data de saída</label>
+              <input type="date" id="saida" name="saida" required />
+            </div>
+          </div>
+
+          <div class="campo">
+            <label for="acomodacao">Tipo de acomodação</label>
+            <select id="acomodacao" name="acomodacao" required>
+              <option value="">Selecione o tipo de quarto</option>
+              <option value="casal">Quarto de Casal</option>
+              <option value="familia">Quarto Familiar</option>
+              <option value="luxo">Suíte Luxo</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="observacoes">Observações / Pedido especial</label>
+            <textarea
+              id="observacoes"
+              name="observacoes"
+              placeholder="Ex.: vista para o mar, cama extra, comemoração especial..."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="botao-reserva">
+            <i class="ph ph-paper-plane-right"></i>
+            Solicitar reserva
+          </button>
+        </form>
+      </div>
+
+      <aside class="informacoes-contato">
+        <img
+          src="images/0f2d1c_cc20757c019a466ea8dd5fbd6b8db2e0~mv2.avif"
+          alt="Vista da pousada"
+        />
+
+        <div class="informacoes-conteudo">
+          <h2><i class="ph ph-palm-tree"></i> Entre em contato</h2>
+
+          <p class="descricao">
+            Estamos à disposição para tirar suas dúvidas e ajudar no que for preciso.
+          </p>
+
+          <div class="info-item">
+            <i class="ph ph-phone"></i>
+            <div>
+              <strong>Telefone</strong>
+              <p>11 98519-6615</p>
+              <span>WhatsApp disponível</span>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <i class="ph ph-envelope"></i>
+            <div>
+              <strong>E-mail</strong>
+              <p>reservasparadise@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <i class="ph ph-clock"></i>
+            <div>
+              <strong>Horário de atendimento</strong>
+              <p>Segunda a Domingo</p>
+              <span>08h às 22h</span>
+            </div>
+          </div>
+
+          <div class="mensagem-contato">
+            <p>Será um prazer<br />receber você!</p>
+          </div>
+        </div>
+      </aside>
+    </main>
 
     <footer>
       <div class="footerdivisao">
